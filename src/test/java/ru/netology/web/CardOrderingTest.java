@@ -25,7 +25,7 @@ public class CardOrderingTest {
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
         driver = new ChromeDriver(options);
-        driver.get("http://localhost:9999/");
+//        driver.get("http://localhost:9999/");
     }
 
     @AfterEach
@@ -36,6 +36,6 @@ public class CardOrderingTest {
 
     @Test
     void test() {
-        // Your test logic here
+        driver.get("http://localhost:9999/");
     }
 }
